@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Dev Alura - Aula 01</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">
+      Calculadora de média
+    </h1>
+    <p class="page-subtitle">
+      Descubra qual a sua média final!
+    </p>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+    <h2 id="error"></h2>
+  </div>
+  <!-- nome -->
+  <div class="name" id="name">
+    <p class="page-name">
+      Digite o seu Nome
+    </p>
+    <input type="text" id="yourName" name="uNome" placeholder="Insira o seu Nome"><br>
+    <button onclick="armazenarNome()">Próximo</button>
+  </div>
+
+  <!-- 1 Bimestre -->
+  <div class="onenote display-none" id="oneBimester">
+    <p class="page-1note">
+      Digite a sua nota do Primeiro Bimestre
+    </p>
+    <input type="number" id="oneNote" /><br>
+    <button onclick="armazenarNota1()">Próximo</button>
+  </div>
+  <!-- 2 Bimestre -->
+  <div class="twonote display-none" id="twoBimester">
+    <p class="page-2note">
+      Digite a sua nota do Segundo Bimestre
+    </p>
+    <input type="number" id="twoNote" /><br>
+    <button onclick="armazenarNota2()">Próximo</button>
+  </div>
+  <!-- 3 Bimestre -->
+  <div class="threenote display-none" id="threeBimester">
+    <p class="page-3note">
+      Digite a sua nota do Terceiro Bimestre
+    </p>
+    <input type="number" id="threeNote" /><br>
+    <button onclick="armazenarNota3()">Próximo</button>
+  </div>
+  <!-- 4 Bimestre -->
+  <div class="fournote display-none" id="fourBimester">
+    <p class="page-4note">
+      Digite a sua nota do Quarto Bimestre
+    </p>
+    <input type="number" id="fourNote" /><br>
+    <button onclick="armazenarNota4()">Próximo</button>
+  </div>
+  <!-- botão calcular -->
+  <div class="calculate display-none" id="calculate">
+    <p class="page-calculate">
+      Calcular a sua Média final
+    </p>
+    <button onclick="calcularNotaFianl()">Próximo</button>
+  </div>
+  <!-- resultado -->
+  <div class="result display-none" id="yourResult">
+    <h2 class="result" id="result"></h2>
+  </div>
+  <!-- erro -->
+  <div class="containerError">
+    <!-- erro nota1-->
+    <div class="erro display-none" id="errorOneNote">
+      <p class="page-4note">
+        Por gentileza o número é maior que zero e menor do que dez, obrigado.
+      </p>
+      <button onclick="armazenarNota1()">Voltar</button>
+    </div>
+    <!-- erro nota2-->
+    <div class="erro display-none" id="erroTwoNote">
+      <p class="page-4note">
+        Por gentileza o número é maior que zero e menor do que dez, obrigado.
+      </p>
+      <button onclick="armazenarNota2()">Voltar</button>
+    </div>
+    <!-- erro nota3-->
+    <div class="erro display-none" id="erroThreeNote">
+      <p class="page-4note">
+        Por gentileza o número é maior que zero e menor do que dez, obrigado.
+      </p>
+      <button onclick="armazenarNota3()">Voltar</button>
+    </div>
+    <!-- erro nota4-->
+    <div class="erro display-none" id="erroFourNote">
+      <p class="page-4note">
+        Por gentileza o número é maior que zero e menor do que dez, obrigado.
+      </p>
+      <button onclick="armazenarNota4()">Voltar</button>
+    </div>
+  </div>
+</body>
+<link rel="stylesheet" href="cdm.css">
+<script src="cdm.js"> </script>
+</html>
